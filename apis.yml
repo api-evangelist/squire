@@ -1,8 +1,25 @@
 aid: squire
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/squire.png
 name: Squire
-description: 'Squire is a company surfaced as a portfolio company of crv, iconiq-capital, trinity-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Squire is a barbershop management software platform that gives barbers and shop owners
+  the tools to run their business: online booking and scheduling, client management and loyalty, integrated
+  payment processing with same-day deposits, a custom-branded client mobile app, point-of-sale, inventory
+  and business analytics. Booking is surfaced through Google, Instagram and Squire''s own consumer
+  channels. Squire operates as a closed SaaS product with login-gated web and mobile applications; no
+  public developer API, developer portal, OpenAPI specification, or partner/integration program is
+  published as of this profile. Added to the API Evangelist network as a portfolio company of CRV,
+  ICONIQ Capital and Trinity Ventures.'
 url: https://raw.githubusercontent.com/api-evangelist/squire/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,10 +31,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Booking
+- Scheduling
+- Payments
+- Point of Sale
+- Barbershop
+- SaaS
+- Small Business
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +49,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/squire-domain-security.yml
 - type: Website
   url: https://getsquire.com/
+- type: Support
+  url: https://help.getsquire.com
+- type: Pricing
+  url: https://getsquire.com/pricing
+- type: Login
+  url: https://app.getsquire.com/login
+- type: TermsOfService
+  url: https://getsquire.com/legal/terms
+- type: PrivacyPolicy
+  url: https://getsquire.com/legal/privacy
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
